@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="743.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormController.java">
+   <padding>
+      <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+   </padding>
+   <children>
+      <AnchorPane layoutX="-0.0380859375">
+         <children>
+            <GridPane alignment="TOP_CENTER" prefHeight="743.0" prefWidth="568.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="-80.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="149.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.0" minWidth="10.0" prefWidth="164.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="165.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="92.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="70.0" minHeight="0.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="74.0" minHeight="4.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="167.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="104.0" minHeight="4.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="142.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="215.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="215.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="294.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="205.0" minHeight="7.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="203.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="210.0" minHeight="1.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="220.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Nom" GridPane.rowIndex="1" />
+                  <Label text="Primer Cognom" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Segon Cognom" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="Categoria" GridPane.rowIndex="5" />
+                  <Label text="Descripcio" GridPane.rowIndex="7" />
+                  <Label text="Telefon" GridPane.rowIndex="3" />
+                  <Label text="email" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="web" GridPane.rowIndex="9" />
+                  <Label text="Linkedin" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label text="twitter" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <Label text="Localitat" GridPane.rowIndex="11" />
+                  <Label text="provincia" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <Button fx:id="btnAcceptar" contentDisplay="TOP" mnemonicParsing="false" onAction="#setOnAction" prefHeight="36.0" prefWidth="124.0" text="Guardar" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+                  <TextField fx:id="nom" GridPane.rowIndex="2" />
+                  <TextField fx:id="cognom1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="cognom2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <TextField fx:id="telf" GridPane.rowIndex="4" />
+                  <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="web" GridPane.rowIndex="10" />
+                  <TextField fx:id="linkedin" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField fx:id="twitter" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <TextField fx:id="localitat" GridPane.rowIndex="12" />
+                  <TextField fx:id="provincia" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <TextArea fx:id="descripcio" prefHeight="134.0" prefWidth="250.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="8" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NOU CONTACTE" wrappingWidth="208.7294921875" GridPane.columnIndex="1" />
+                  <Label text="Subcategoria" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ChoiceBox fx:id="categoria" prefHeight="24.0" prefWidth="183.0" GridPane.rowIndex="6" />
+                  <ChoiceBox fx:id="subcategoria" prefHeight="24.0" prefWidth="208.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
